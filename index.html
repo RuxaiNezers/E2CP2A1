@@ -26,7 +26,8 @@
 		height: 40px;
 		top: 40px;
 		left: 80%;
-		position: relative;;
+		position: relative;
+		color: grey;
 	}
 
 	.bootcamp{
@@ -35,20 +36,18 @@
 	
 	}
 
-	.info{
-
-	}
-
-	.contacto{
-
-
-	}
 
 	.fotter{
 		color: white;
 		background-color: #222222;
 		height: 50px;
 		display: flex;
+		width: 90%;
+		justify-content: left;
+		padding-left: 10%;
+		padding-right: -10%;
+		margin: 0px;
+		border: 0px; 
 	}
 	.logo{
 		text-align: center;
@@ -59,6 +58,9 @@
 		position: relative;
 	}
 	.centro{
+
+		padding-top: 30px;
+		padding-bottom: 30px;
 		text-align: center;
 
 		justify-content: center;
@@ -73,6 +75,48 @@
 		justify-content: center;
 	}
 
+	.flotante{
+		float: left;
+		width: 30%;
+		justify-content: center;
+		text-align: center;
+		margin: 0px;
+		border-right: 0px;
+		padding-right: 0px;
+		border-left: 0px;
+		padding-left: 0px;
+		position: center;
+
+	}
+	.contacto{
+		position: relative;
+		margin-left: 20%;
+		width: 80%;
+	}
+
+	.botonA {
+		width: 100px;
+        border: 1px solid #0093FF; /*anchura, estilo y color borde*/
+		padding: 10px; /*espacio alrededor texto*/
+		background-color: #0093FF; /*color botón*/
+		color: #ffffff; /*color texto*/
+		text-decoration: none; /*decoración texto*/
+		border-radius: 10px; /*bordes redondos*/
+	}
+
+	.botonV {
+		width: 100px;
+        border: 1px solid #00FF46; /*anchura, estilo y color borde*/
+		padding: 10px; /*espacio alrededor texto*/
+		background-color: #00FF46; /*color botón*/
+		color: #ffffff; /*color texto*/
+		text-decoration: none; /*decoración texto*/
+		border-radius: 10px; /*bordes redondos*/
+	}
+	.inscribete{
+		border-bottom: 1px solid grey; 
+		padding-bottom: 50px;
+	}
 </style>
 </head>
 <body>
@@ -90,11 +134,14 @@
 
 		<h1>COMIENZA UNA NUEVA VIDA Y <br> ÚNETE AL MUNDO <br> TECNOLÓGICO</h1>
 
-		<div>boton azul</div>
-		<div>boton verde</div>
-
-		<p>hay una excacez gigante de desarrolladores en el mundo y más aán en 
-		latinoamérica, se necesitan más desarrolladores y tú puedes ser uno!</p>
+		<div class="centro">
+			<div>
+				<a class="botonA" href="#">Comienza Aca!</a>
+				<a class="botonV "href="#"> Mas Info</a>
+			</div>
+		</div>
+		<p>hay una excacez gigante de desarrolladores en el mundo y más áun en 
+		latinoamérica, se necesitan más <br> desarrolladores y tú puedes ser uno!</p>
 	</div>
 
 	<div class="centro bootcamp">
@@ -102,35 +149,37 @@
 			<h4>EL BOTCAMP DE NAVEGACION MÁS GRANDE DE LATINOAMERICA</h4>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. </p>
 		
 		
 		<img class="imagen" src="images/viewing-gallery-for-happy-people.png">
 	</div>
-	<div class="centro">
+	<div class=" inscribete centro">
 		<h4>SOLICITA INFORMACÍON E INSCRÍBETE</h4>
 		<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			tempor incididunt <br> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat.</P>
 
-		<div>boton</div>
+		<div class="centro"> <a class="botonA" href="#"> Inscribete!</a></div>
 		<p>Vive la experiencia en Desafio Latam!</p>
 	</div>
-	<div class="contacto">
-		<div>
-			<h5>Contacto</h5>
-			<p><span>desafio Latam</span></p>
-			<p>Ezequias Alliende 2361</p>
-			<p>P: +56 9 5117 7975</p>
-			<p><a href="inscripsiones@desaciolatam.com">inscripsiones@desaciolatam.com</a></p>
+
+	<div class="centro contacto">
+
+		<div class="flotante">
+			<h4>Contacto</h4>
+
+			<p><span>desafio Latam</span> <br> Ezequias Alliende 2361 <br>P: +56 9 5117 7975 <br><a href="inscripsiones@desaciolatam.com">inscripsiones@desaciolatam.com</a>
+			</p>
 		</div>
-		<div>
+		<div class="flotante">
 			<h5>SUSCRIBETE</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-			<div>caja de correo</div>
+			<div>
+				<p><input type="email" name="direccionemail" placeholder="Ingresa tu email"><input type="submit" value="Enviar">
+  			  	</p>
+			</div>
 		</div>
 	</div>
 	<div class="fotter">
